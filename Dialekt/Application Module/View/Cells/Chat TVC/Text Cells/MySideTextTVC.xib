@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.otf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MySideTextTVC" rowHeight="73" id="BQj-JW-ubV" customClass="MySideTextTVC" customModule="Dialekt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BQj-JW-ubV" id="pfX-Jw-LH2">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cL3-aI-SuB">
+                        <rect key="frame" x="262.5" y="6" width="81.5" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:35 Am" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l5-gB-YtV">
+                                <rect key="frame" x="5" y="40" width="71.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="jvc-Xv-81l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text there" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sib-5c-5xH">
+                                <rect key="frame" x="5" y="6" width="71.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="sib-5c-5xH" firstAttribute="top" secondItem="cL3-aI-SuB" secondAttribute="top" constant="6" id="0d4-1h-aIa"/>
+                            <constraint firstItem="9l5-gB-YtV" firstAttribute="leading" secondItem="cL3-aI-SuB" secondAttribute="leading" constant="5" id="3ml-Dx-Yt2"/>
+                            <constraint firstAttribute="trailing" secondItem="9l5-gB-YtV" secondAttribute="trailing" constant="5" id="ITm-4X-mpA"/>
+                            <constraint firstAttribute="trailing" secondItem="sib-5c-5xH" secondAttribute="trailing" constant="5" id="O7N-yq-mfz"/>
+                            <constraint firstItem="sib-5c-5xH" firstAttribute="leading" secondItem="cL3-aI-SuB" secondAttribute="leading" constant="5" id="Xvi-3B-SOm"/>
+                            <constraint firstAttribute="bottom" secondItem="9l5-gB-YtV" secondAttribute="bottom" constant="6" id="hhr-u2-OJ6"/>
+                            <constraint firstItem="9l5-gB-YtV" firstAttribute="top" secondItem="sib-5c-5xH" secondAttribute="bottom" constant="5" id="xnj-iO-hdU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cL3-aI-SuB" secondAttribute="trailing" constant="6" id="40V-r9-g4k"/>
+                    <constraint firstAttribute="bottom" secondItem="cL3-aI-SuB" secondAttribute="bottom" constant="6" id="Kll-mv-rGd"/>
+                    <constraint firstItem="cL3-aI-SuB" firstAttribute="top" secondItem="pfX-Jw-LH2" secondAttribute="top" constant="6" id="PSM-W0-Rbt"/>
+                    <constraint firstItem="cL3-aI-SuB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pfX-Jw-LH2" secondAttribute="leading" constant="80" id="aql-0c-TR1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Vpn-QZ-ooy"/>
+            <connections>
+                <outlet property="messageLabel" destination="sib-5c-5xH" id="n0G-Bo-nnt"/>
+                <outlet property="messageView" destination="cL3-aI-SuB" id="Ewl-nZ-xWW"/>
+                <outlet property="timeLabel" destination="9l5-gB-YtV" id="ISU-8p-rEn"/>
+            </connections>
+            <point key="canvasLocation" x="172" y="-6"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.8666666666666667" green="0.396078431372549" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

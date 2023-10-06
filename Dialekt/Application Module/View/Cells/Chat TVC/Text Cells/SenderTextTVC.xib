@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.otf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderTextTVC" rowHeight="73" id="KGk-i7-Jjw" customClass="SenderTextTVC" customModule="Dialekt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="qXB-QB-Xfi">
+                        <rect key="frame" x="6" y="16.5" width="40" height="40"/>
+                        <color key="backgroundColor" name="LightYellowColor"/>
+                        <color key="tintColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="hcD-Ml-4vb"/>
+                            <constraint firstAttribute="width" secondItem="qXB-QB-Xfi" secondAttribute="height" multiplier="1:1" id="pHT-8f-0wj"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-w7-4JC">
+                        <rect key="frame" x="52" y="6" width="52" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:35 Am" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DY8-Xn-kfI">
+                                <rect key="frame" x="5" y="40" width="42" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="atz-Hs-Izl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OKay" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvC-8g-CVF">
+                                <rect key="frame" x="5" y="6" width="42" height="29"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hvC-8g-CVF" firstAttribute="leading" secondItem="QYc-w7-4JC" secondAttribute="leading" constant="5" id="0Y7-oi-pE8"/>
+                            <constraint firstAttribute="trailing" secondItem="DY8-Xn-kfI" secondAttribute="trailing" constant="5" id="HTl-v1-Z01"/>
+                            <constraint firstAttribute="bottom" secondItem="DY8-Xn-kfI" secondAttribute="bottom" constant="6" id="XJY-sf-p47"/>
+                            <constraint firstItem="DY8-Xn-kfI" firstAttribute="leading" secondItem="QYc-w7-4JC" secondAttribute="leading" constant="5" id="aYg-1c-xvr"/>
+                            <constraint firstItem="DY8-Xn-kfI" firstAttribute="top" secondItem="hvC-8g-CVF" secondAttribute="bottom" constant="5" id="awx-fG-DOi"/>
+                            <constraint firstAttribute="trailing" secondItem="hvC-8g-CVF" secondAttribute="trailing" constant="5" id="rwE-RT-ZXm"/>
+                            <constraint firstItem="hvC-8g-CVF" firstAttribute="top" secondItem="QYc-w7-4JC" secondAttribute="top" constant="6" id="tSq-JH-so4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qXB-QB-Xfi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Aa9-D0-zYh"/>
+                    <constraint firstItem="qXB-QB-Xfi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="GSV-Og-vMi"/>
+                    <constraint firstAttribute="bottom" secondItem="QYc-w7-4JC" secondAttribute="bottom" constant="6" id="IrK-CE-cFh"/>
+                    <constraint firstItem="QYc-w7-4JC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Lie-VJ-NeU"/>
+                    <constraint firstItem="QYc-w7-4JC" firstAttribute="leading" secondItem="qXB-QB-Xfi" secondAttribute="trailing" constant="6" id="dHB-0F-Zh3"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QYc-w7-4JC" secondAttribute="trailing" constant="80" id="p8F-N6-k9P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="hvC-8g-CVF" id="eLg-Zg-jRP"/>
+                <outlet property="messageView" destination="QYc-w7-4JC" id="WhH-Fc-4n4"/>
+                <outlet property="senderImage" destination="qXB-QB-Xfi" id="oFt-bz-eqb"/>
+                <outlet property="timeLabel" destination="DY8-Xn-kfI" id="5vB-Mk-84d"/>
+            </connections>
+            <point key="canvasLocation" x="192.75362318840581" y="81.361607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="city" width="78" height="45"/>
+        <namedColor name="LightYellowColor">
+            <color red="0.9882352941176471" green="0.94901960784313721" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.8666666666666667" green="0.396078431372549" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
